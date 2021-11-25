@@ -1,7 +1,8 @@
 <template>
   <div>
+      <h1 :style="{textAlign: 'center', fontSize: '43px'}">Add User</h1>
     <div class="form-wrapper">
-      <form action="#" @submit.prevent="handleSubmit">
+      <form action="#" @submit.prevent="handleSubmit()">
         <label for="title">Title</label> <br />
         <input
           type="text"
@@ -125,11 +126,11 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     padding: 0 25px;
-    margin: 2% 15%;
+    margin: 1% 15%;
 }
 .userInfo {
   width: 450px;
-  margin: 25px 15px;
+  margin: 10px 15px;
   padding: 35px;
   border: 2px solid green;
   border-radius: 20px;
