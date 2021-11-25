@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <form action="#" @submit.prevent="handleSubmit">
+    <!-- <form action="#" @submit.prevent="handleSubmit">
       <label for="title">Title</label> <br />
       <input type="text" name="title" id="title" v-model="user.title" /> <br /><br />
 
@@ -14,15 +14,11 @@
       <br /><br />
 
       <input type="submit" value="Submit" />
-    </form>
-
-    <div>
-    </div>
+    </form> -->
   </div>
 </template>
 
 <script>
-import axios from "axios";
 export default {
   name: "HelloWorld",
   props: {
@@ -30,30 +26,22 @@ export default {
   },
   data() {
     return {
-      user: {
-        title: "",
-        description: "",
-      },
+      // user: {
+      //   title: "",
+      //   description: "",
+      // },
     };
   },
   methods: {
-    handleSubmit() {
-      axios
-      .post("http://localhost:5050/newUser", this.user)
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-      console.log("submited", this.user);
-    },
-
-    // deleteList() {
-    //   this.lists.pop();
+    // handleSubmit() {
+    //   axios
+    //   .post("http://localhost:5050/newUser", this.user)
+    //   .then((res) => console.log(res))
+    //   .catch((err) => console.log(err));
+    //   console.log("submited", this.user);
     // },
 
-    // editList(index) {
-    //   console.log(this.lists[index].title);
-
-    //   this.lists[index].title;
-    // },
+    
   },
 };
 </script>
